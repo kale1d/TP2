@@ -1,0 +1,105 @@
+@bgcolor: #c8cbfe;
+@ancho: 1280px;
+@alto: 750px;
+@ficolor: #fdbbcc;
+@fcancho: 1000px;
+@fmargin: 5px;
+@sidecolor: #9c73fe;
+@fimg: url("../img/front-img.jpg");
+
+.must-container{
+	width: @ancho;
+	height: @alto;
+	background-color: @bgcolor;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+ .main-container {
+ 	background-color: @bgcolor;
+ 	width: @ancho;
+ 	height: @alto;
+ 	display: flex;
+ }
+
+.bienvenida {
+	width: @ancho - @fcancho;
+	height: @alto;
+	background-color: @sidecolor;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+input {
+	width: 200px;
+	height: @fmargin * 4;
+	border-radius: 3px;
+}
+
+.button {
+	margin-top: @fmargin * 4;
+	padding-top: @fmargin;
+	text-align: center;
+	width: 100px;
+	height: @fmargin * 5;
+	background-color: #fc5f85;
+	border-radius: 3px;
+}
+
+ .fichas-container {
+	width: @fcancho;
+	height: @alto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+ }
+
+ .fichas {
+ 	margin-right: @fmargin;
+ 	margin-bottom: @fmargin/2;
+	width: (@fcancho/4)-@fmargin;
+	height: (@fcancho/4)-@fmargin;
+ }
+
+.cardss{
+ 	margin-right: @fmargin;
+ 	margin-bottom: @fmargin/2;
+	width: (@fcancho/4)-@fmargin;
+	height: (@fcancho/4)-@fmargin;
+ 
+}
+
+.fichas-back {
+ 	margin-right: @fmargin;
+ 	margin-bottom: @fmargin/2;
+	width: (@fcancho/4)-@fmargin;
+	height: (@fcancho/4)-@fmargin;
+	z-index: 3;
+}
+
+.notshow {
+	display: none;
+}
+
+.img-front{
+	background: @fimg;
+}
+
+.pointer{
+pointer-events: none;
+}
+
+.transition {
+	transition:All 1s ease-in;
+		-webkit-transition:All 1s ease-in;
+		-moz-transition:All 1s ease-in;
+		-o-transition:All 1s ease-in;
+		transform:  rotate(4deg) scale(1) skew(1deg) translate(10px); 
+		-webkit-transform:  rotate(4deg) scale(1) skew(1deg) translate(10px);
+		-moz-transform:  rotate(4deg) scale(1) skew(1deg) translate(10px);
+		-o-transform:  rotate(4deg) scale(1) skew(1deg) translate(10px);
+		-ms-transform:  rotate(4deg) scale(1) skew(1deg) translate(10px);
+		// }.classname:hover{transform:  rotate(360deg) scale(0.946) skew(1deg) translate(0px);-webkit-transform:  rotate(360deg) scale(0.946) skew(1deg) translate(0px);-moz-transform:  rotate(360deg) scale(0.946) skew(1deg) translate(0px);-o-transform:  rotate(360deg) scale(0.946) skew(1deg) translate(0px);-ms-transform:  rotate(360deg) scale(0.946) skew(1deg) translate(0px);
+}
